@@ -1,0 +1,389 @@
+body{
+    font-family: "Josefin Sans", serif;
+    background-color: #e9e9e9;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+}
+h2{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 3rem;
+    margin-top: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Header Section */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo-img{
+    margin-top: 50px;
+    width: 200px;
+}
+.nav-bar{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav-bar li{
+    list-style: none;
+    margin: 50px 130px;
+}
+
+/* Main Section */
+main{
+    border: 1px solid black;
+    background-color: white;
+    width: 1024px;
+    margin: 0 auto;
+}   
+.main-heading{
+    padding: 50px 50px 0 50px;
+}
+.main-title{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-size: 9rem;
+    margin: 0;
+    padding: 0;
+}
+.main-heading h2{
+    margin: 0;
+}
+.main-para{
+    font-size: 2rem;
+    width: 88%;
+    margin-bottom: 50px;
+}
+
+/* Sub Headings */
+.headings{
+    gap: 50px;
+    column-count: 3;
+    padding: 0 50px 50px 50px;
+    line-height: 1.6rem;
+}
+
+/* Album Section */
+.images{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2, auto);
+}
+.imgs{
+    width: 100%;
+    height: 100%;
+}
+.img1{
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.img2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.img3{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.img4{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.img5{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+/* Author Section */
+.author-sect{
+    padding: 50px;
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+.author{
+    width: 45%;
+    margin-left: 13rem;
+}
+.author p{
+    text-align: left;
+    line-height: 1.5rem;
+}
+.author-img{
+    width: 200px;
+    border-radius: 50%;
+}
+
+/* Footer Section */
+footer{
+    background-color: #14181d;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    width: 1024px;
+    padding: 50px 0;
+}
+
+/* Tablet Device */
+@media (min-width: 720px) and (max-width: 1024px){
+    h2{
+        font-size: 4rem;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    /* Header Section */
+    .logo-img{
+        margin-top: 30px;
+        width: 80px;
+    }
+    .nav-bar li{
+        margin: 30px 60px;
+    }
+
+    /* Main Section */
+    main{
+        width: 540px;
+    }
+    .main-heading{
+        padding: 30px 30px 0 30px;
+    }
+    .main-title{
+        font-size: 4rem;
+        text-align: center;
+    }
+    .main-para{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .headings{
+        gap: 30px;
+        column-count: 1;
+        padding: 0 30px 30px 30px;
+    }
+
+    /* Album Section */
+    .images{
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img3{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .img4{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .img5{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+
+    /* Author Section */
+    .author-sect{
+        padding: 30px;
+    }
+    .author{
+        width: auto;
+        margin: 0;
+    }
+    .author-img{
+        height: 50%;
+    }
+
+    /* Footer Section */
+    footer{
+        width: 540px;
+        padding: 30px 0;
+    }
+}
+
+/* Large Mobile */
+@media (min-width: 540px) and (max-width: 720px){
+    h2{
+        font-size: 5rem;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    /* Header Section */
+    .logo-img{
+        margin-top: 20px;
+        width: 80px;
+    }
+    .nav-bar li{
+        margin: 20px 50px;
+    }
+
+    /* Main Section */
+    main{
+        width: 100%;
+    }
+    .main-heading{
+        padding: 20px 20px 0 20px;
+        margin-bottom: 20px;
+    }
+    .main-title{
+        font-size: 5rem;
+        text-align: center;
+    }
+    .main-para{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        width: auto;
+    }
+    .headings{
+        column-count: 1;
+        padding: 0 20px 20px 20px;
+    }
+
+    /* Album Section */
+    .images{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .img4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .img5{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    /* Author Section */
+    .author-sect{
+        padding: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .author{
+        align-items: center;
+        text-align: center;
+        margin: 0 20px;
+        width: 100%;
+    }
+
+    /* Footer Section */
+    footer{
+        width: 100%;
+        padding: 20px 0;
+    }
+}
+
+/* Small Mobile */
+@media (min-width: 360px) and (max-width: 540px){
+    h2{
+        font-size: 6rem;
+        text-align: center;
+    }
+    p{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    /* Header Section */
+    .logo-img{
+        margin-top: 12px;
+        width: 80px;
+    }
+    .nav-bar li{
+        margin: 12px 30px;
+    }
+
+    /* Main Section */
+    main{
+        width: 100%;
+    }
+    .main-heading{
+        padding: 12px 12px 0 12px;
+    }
+    .main-title{
+        font-size: 6rem;
+        text-align: center;
+    }
+    .main-para{
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+        width: auto;
+    }
+    .headings{
+        margin-top: 12px;
+        gap: 12px;
+        column-count: 1;
+        padding: 0 12px 12px 12px;
+    }
+
+    /* Album Section */
+    .images{
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+    }
+    .img1{
+        display: none;
+    }
+    .img2{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .img3{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .img4{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .img5{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    /* Author Section */
+    .author-sect{
+        padding: 12px;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .author{
+        align-items: center;
+        text-align: center;
+        margin: 0 12px;
+        width: 100%;
+    }
+
+    /* Footer Section */
+    footer{
+        width: 100%;
+        padding: 12px 0;
+    }
+}

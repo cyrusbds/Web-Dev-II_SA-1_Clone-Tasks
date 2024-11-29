@@ -1,0 +1,271 @@
+body{
+    font-family: "Lato", serif; 
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;    
+}
+/* Buttons */
+button{
+    border-radius: 10px;
+    font-family: "Teko", serif;
+    font-size: 2em;
+    padding: 16px;
+    width: 100%;
+    background-color: #070410;
+    color: #EEF36A; 
+}
+button:hover{
+    background-color: #EEF36A;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: #EEF36A;
+}
+a:hover{
+    color: #4DCCBD;
+}
+img{
+    width: 100%;
+    height: 35rem;
+    border-bottom: 2px solid black;
+}
+
+/* Header Section */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 8rem;
+    padding: 0;
+    background-color: #231651;
+    border-bottom: 0.5rem solid #4DCCBD;
+}
+.nav-logo{
+    font-family: "Teko", serif;
+    margin: 16px;
+    margin-right: 0;
+    font-size: 3em;
+    color: #EEF36A;
+}
+.nav-bar{
+    display: flex;
+    margin: 0;
+}
+.nav-bar li{
+    list-style: none;
+    margin-right: 48px;
+}
+.nav-bttn{
+    margin: 16px;
+    width: 10%;
+    background-color: #EEF36A;
+    color: #070410;
+}
+.nav-bttn:hover{
+    background-color: black;
+    color: #EEF36A;
+}
+
+/* Main Section */
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+.main-content{
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 48px;
+    margin: 48px auto;
+}
+/* Big Movie */
+.main-movie{
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    box-shadow: 0.5rem 0.5rem #4DCCBD;
+    font-size: 1.5em;
+    background-color: #FFFFFF;
+}
+.main-movie img{
+    width: 100%;
+    object-fit: cover;
+}
+.main-desc{
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+}
+.main-movie p{
+    margin: 0;
+    width: 75%;
+}
+.main-movie button{
+    padding: 48px;
+    margin: 0;
+    width: auto;
+    line-height: 2.5rem;
+}
+/* 2 Vertical Movies */
+.sub-movies{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    border: 2px solid black;
+    box-shadow: 0.5rem 0.5rem #4DCCBD;
+    background-color: white;
+}
+.desc{
+    padding: 16px;
+    padding-top: 0;
+}
+/* 3 Other Horizontal Movies */
+.movies{
+    position: relative;
+    grid-column: 1/3;
+    display: flex;
+    border: 2px solid black;
+    font-size: 1.5em;
+    box-shadow: 0.5rem 0.5rem #4DCCBD;
+    background-color: white;
+    width: 900px;
+}
+.movies img{
+    height: 100%;
+    width: 50%;
+    border-right: 2px solid black;
+}
+.movies button{
+    position: absolute;
+    bottom: 16px;
+    width: 46%;
+}
+
+/* Tablet Device */
+@media (min-width: 720px) and (max-width: 1024px){
+    /* Header Section */
+    .nav-bar li{
+        margin-right: 32px;
+    }
+    .nav-bttn{
+        width: auto;
+    }
+    /* Main Section */
+    .main-content{
+        width: 90%;
+        max-width: 56rem;
+        margin: 32px auto;
+        gap: 32px;
+    }
+    .main-movie{
+        grid-column: auto;
+        width: 100%;
+    }
+    .main-movie img{
+        height: 100%;
+        width: 100%;
+    }
+    .main-desc{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        gap: 32px;
+    }
+    .main-movie p{
+        width: 100%;
+    }
+    .main-movie button{
+        margin-top: 16px;
+        padding: 27px 0;
+    }
+    .sub-movies{
+        grid-column: auto;
+    }
+    .sub-movies img{
+        width: 100%;
+        height: 28rem;
+    }
+    .movies{
+        display: flex;
+        flex-direction: column;
+        grid-column: auto;
+        width: 100%;
+    }
+    .movies img{
+        width: 100%;
+        height: 50%;
+    }
+    .movies button{
+        width: 90%;
+    }
+}
+
+/* Mobile Device */
+@media (min-width: 360px) and (max-width: 720px){
+    /* Header Section */
+    .nav-logo{
+        font-size: 2em;
+    }
+    .nav-bar li{
+        display: none;
+    }
+    .nav-bttn{
+        width: auto;
+    }
+    /* Main Section */
+    .main-content{
+        width: 100%;
+        grid-template-columns: repeat(1, auto);
+        display: flex;
+        flex-direction: column;
+        margin: 16px auto;
+        gap: 16px;
+    }
+    .main-movie{
+        grid-column: auto;
+        box-shadow: none;
+    }
+    .main-movie p{
+        width: 100%;
+    }
+    .main-movie button{
+        margin-top: 10px;
+        padding: 27px 0;
+    }
+    .main-desc{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .desc{
+        width: 90%;
+        padding: 16px;
+        padding-top: 0;
+    }
+    .sub-movies{
+        grid-column: auto;
+        box-shadow: none;
+    }
+    .movies{
+        grid-column: auto;
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        height: auto;
+        box-shadow: none;
+    }
+    .movies img{
+        width: 100%;
+    }
+    .movies p{
+        margin-bottom: 50px;
+    }
+    .movies button{
+        position: relative; 
+        width: 100%;
+    }
+}
